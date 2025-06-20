@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of Chemical Sciences</title>
+
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    .active, .collapsible:hover {
+  background-color: #1c5c74;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #098137;
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .hamburger {
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    /* Sidebar menu */
+    .sidebar {
+      height: 100vh;
+      width: 250px;
+      background-color: #0d0e0d;
+      opacity: 90%;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      padding-top: 60px;
+      transition: right 0.3s ease;
+      z-index: 999;
+    }
+
+    .sidebar.active {
+      right: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #111199;
+    }
+
+    /* Overlay */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 998;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">GHANA CHEMICAL SOCIETY-UDS CHAPTER</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+  
+<p></p>
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Course Content</a></li>
+      <li><a href="#job-opportunities">Job-Opportunities</a></li>
+      <li><a href="#course materials">Course Materials</a></li>
+      <li><a href="#emerging-technologies">emerging-technologies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      overlay.classList.toggle("show");
+    });
+
+    overlay.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+      overlay.classList.remove("show");
+    });
+  </script>
+
+  </style>
+</head>
+<body>
+   <!-- 🔔 Welcome Popup -->
+  <div class="popup-overlay" id="welcomePopup">
+    <div class="popup-content">
+      <h2>Welcome to the Department of Chemical Sciences</h2>
+      <p>We are comitted to teaching, research, and innovation</p>
+      <button id="closePopup">Enter Site</button>
+    </div>
+  </div>
+
+  <!-- Header section with title and subtitle -->
+  <header>
+    <h1>Department of Chemical Sciences</h1>
+    <p>B.Sc. Chemical Science and Technology</p>
+  </header>
+
+ <!-- Relevant image representing the department -->
+      <img src="nav-bar/4a716262a293607eefb79b12a4ea5f09.jpg" alt="chemistry" width="100%" height="240px" >
+  <main>
+    <!-- Homepage introduction section -->
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>
+        Welcome to the official website of the Department of Chemical Sciences. This platform offers a comprehensive overview of the B.Sc. in Chemical Science and Technology, including course details, distinguished faculty, research opportunities, and more.<br>
+        About the Program
+
+      
+Chemical Science is the fundamental study of the composition, structure, properties, and changes of matter. It encompasses the principles of chemistry and provides a deep understanding of the molecular interactions that govern physical and biological processes.<br>
+Chemical Technology applies the knowledge gained from chemical science to develop and optimize processes, equipment, and products used in industries. It focuses on practical and industrial applications of chemistry, such as manufacturing, pharmaceuticals, materials<br> development, and environmental management.
+The integration of Chemical Science and Chemical Technology in this program prepares students with both theoretical knowledge and practical skills. This combination ensures a well-rounded education that addresses both research and industrial demands.<br>
+Emerging technologies in this field include nanotechnology, imaging techniques, green chemistry, biotechnology, and data-driven chemical informatics. These areas are shaping the future of chemical research and industrial practice, making graduates from this<br> program well-equipped for evolving scientific and technological challenges.
+
+      </p>
+      
+    </section>
+
+    <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="nav-bar/2471526a79c65b68e94ac99ea4498c0c.jpg" alt="Slide 1" width="240px" height="400px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="nav-bar/0b78f4554296256fd0588d31040aa601.jpg" alt="Slide 2" width="240px" height="400px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="nav-bar/c91d1da159f14e1514caf7dd4d74426a.jpg" alt="Slide 3" width="240px" height="400px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="nav-bar/7fde8e3bb3fb144363e6a6a7204a480a.jpg" alt="Slide 4" width="240px" height="400px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="nav-bar/cc095c3cf483bc5ac3b4d3ea07425769.jpg" alt="Slide 5" width="240px" height="400px">
+  </div>
+
+
+  <!-- Navigation buttons -->
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+
+</div>
+
+<!-- Dots -->
+<div class="dots" style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+    <!-- Course content section with core, elective, and practical components -->
+    <section id="courses">
+      <h2>Course Content</h2>
+      <h3>Core Courses</h3>
+       <div class="accordion-item">
+ <button class="accordion">Level 100 First Trismester</button>       
+     <div class="panel">
+      <ul>
+        <li>BIO 131 – General Biology</li>
+        <li>CHT 101 – General Physical and Inorganic Chemistry</li>
+        <li>CHT 161 Mathematics for Chemical Sciences I</li>
+<li>CHT 171 Statistics for Chemical Sciences</li>
+<li>CHT 181 Computing for Chemical Sciences</li>
+<li>CHT 191 Physical and Inorganic Chemistry Lab I</li>
+<li>PHY 103 Principles of Physics I (Theory)</li>
+<li>PHY 191 Principles of Physics I (Practical)</li>
+      </ul>
+      </div>
+       </div>
+
+<div class="accordion-item">
+ <button class="accordion">Level 100 Second Trismester</button>       
+     <div class="panel">     
+        <ul>
+<li>CHT 122 Introductory Organic Chemistry</li>
+<li>CHT 124 Biochemistry and Cell Biology</li>
+<li>CHT 142 Analytical Chemistry</li>
+<li>CHT 152 Chemistry and Sustainable Development</li>
+<li>CHT 162 Mathematics for Chemical Sciences II</li>
+<li>CHT 192 Organic Chemistry Lab I</li>
+<li>PHY 102 Principles of Physics II (Theory)</li>
+<li>PHY 192 Principles of Physics II (Practical)</li>
+        </ul>
+      </div>
+</div>
+
+       <div class="accordion-item">
+ <button class="accordion">Level 200 First Trismester</button>       
+     <div class="panel">   
+        <ul>
+<li>CHT 211 Chemical Thermodynamics and Applications</li>
+<li>CHT 221 Reaction Mechanisms and Heterocyclic Chemistry</li>
+<li>CHT 241 Analytical Methods in Chemistry</li>
+<li>CHT 251 Chemical Process Utilities</li>
+<li>CHT 253 Industrial Chemicals and Environment</li>
+<li>CHT 255 Process Analysis and Statistics</li>
+<li>CHT 257 Chemical Principles in CSI</li>
+<li>CHT 291 Organic Chemistry Lab II</li>
+<li>CHT 293 Physical and Inorganic Chemistry Lab II</li>
+        </ul>
+       </div>
+       </div>
+       
+       <div class="accordion-item">
+ <button class="accordion">Level 200 Second Trismester</button>       
+     <div class="panel">   
+        <ul>
+<li>BUS 254 Business Skills for Chemical Scientist</li>
+<li>CHT 212 Phase Equilibria and Chemical kinetics</li>
+<li>CHT 222 Organic Stereochemistry</li>
+<li>CHT 232 Coordination and Bioinorganic Chemistry</li>
+<li>CHT 242 Industrial Chemistry I</li>
+<li>CHT 254 Biochemical Techniques</li>
+<li>CHT 256 Material Science and Nanotechnology</li>
+<li>CHT 292 Organic Chemistry Lab III</li>
+<li>CHT 294 Physical and Inorganic Chemistry Lab III</li>
+        </ul>
+       </div>
+       </div>
+
+        <div class="accordion-item">
+ <button class="accordion">Level 300 First Trismester</button>       
+     <div class="panel">  
+        <ul>
+<li>CHT 307 Quality Management and Laboratory Accreditation</li>
+<li>CHT 311 Quantum Chemistry</li>
+<li>CHT 321 Organic Synthesis</li>
+<li>CHT 331 Organometallic Chemistry and Catalysis</li>
+<li>CHT 341 Analytical Clinical Biochemistry</li>
+<li>CHT 343 Industrial Chemistry II</li>
+<li>CHT 351 Chemical and Bioprocess Technology</li>
+<li>CHT 383 Research Methodology for Chemical Scientist 2</li>
+<li>CHT 391 Chemical Technology Lab 1</li>
+        </ul>
+       </div>
+        </div>
+
+       <div class="accordion-item">
+ <button class="accordion">Level 300 Second Trismester</button>       
+     <div class="panel">  
+        <ul>
+<li>CHT 302 Molecular Modelling and Drug Design</li>
+<li>CHT 304 Chemoinformatics</li>
+<li>CHT 312 Industrial Electrochemistry</li>
+<li>CHT 322 Biomolecules and Metabolism</li>
+<li>CHT 324 Medicinal Chemistry</li>
+<li>CHT 332 Photochemistry and Molecular Spectroscopy</li>
+<li>CHT 382 Frontiers in Chemical Technology Research</li>
+<li>ECN 302 Economics for Chemical Scientist</li>
+        </ul>
+       </div>
+       </div>
+       
+       <div class="accordion-item">
+ <button class="accordion">Level 400 First Trismester</button>       
+     <div class="panel">  
+       <ul>
+<li>CHT 411 Theoretical and Computational Chemistry</li>
+<li>CHT 421 Natural Products Chemistry</li>
+<li>CHT 451 Biotechnology</li>
+<li>CHT 453 Pulp and Paper Technology</li>
+<li>CHT 455 Pharmaceutical Analysis and Quality Control</li>
+<li>CHT 457 Polymer Chemistry and Nanotechnology</li>
+       </ul>
+      </div>
+       </div>
+
+ <div class="accordion-item">
+ <button class="accordion">Level 400 Second Trismester</button>       
+     <div class="panel">  
+       <ul>
+<li>CHT 402 Principles of Quality Management</li>
+<li>CHT 404 Pollution Control and Environmental Analysis</li>
+<li>CHT 424 Pharmacognosy and Phytochemistry </li>
+<li>CHT 426 Herbal Drug Development Technology</li>
+<li>CHT 452 Petroleum Chemistry and Technology</li>
+<li>CHT 462 Forensic Toxicology </li>
+      </ul>
+     </div>
+ </div>
+
+
+      <h3>Elective Courses</h3>
+     <div class="accordion-item">
+ <button class="accordion">Level 200 First Trismester</button>       
+     <div class="panel">   
+      <ul>
+        <li>CHT 261 – Fuel Chemistry</li>
+        <li>CHT 263 Minerals Processing and Analysis </li>
+<li>CHT 265 Functional Foods and Nutraceuticals</li>
+      </ul>
+    </div>
+     </div>
+
+     <div class="accordion-item">
+ <button class="accordion">Level 200 Second Trismester</button>       
+     <div class="panel">  
+     <ul>
+<li>CHT 258 Food Chemistry and Preservation </li>
+<li>CHT 262 Green Chemistry and Methods </li>
+<li>CHT 264 Colour Chemistry and Technology </li>
+     </ul>
+    </div>
+     </div>
+
+<div class="accordion-item">
+ <button class="accordion">Level 300 First Trismester</button>       
+     <div class="panel">  
+      <ul>
+<li>CHT 313 Radiochemistry </li>
+<li>CHT 353 Food Processing Technology </li>
+<li>CHT 355 Biofuels and Biorefiniries </li>
+      </ul>
+    </div>
+</div>
+
+    <div class="accordion-item">
+ <button class="accordion">Level 300 Second Trismester</button>       
+     <div class="panel">  
+      <ul>
+<li>CHT 352 Pharmacology of Drug Therapy 2</li>
+<li>CHT 354 Principles of Metallurgy 2</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+ <button class="accordion">Level 400 First Trismester</button>       
+     <div class="panel">  
+      <ul>
+<li>CHT 403 Microbiology and Toxicology 2</li>
+<li>CHT 405 Wastewater Management 2</li>
+<li>CHT 461 Forensic Science 2</li>
+<li>CHT 463 Protein Biochemistry and Proteomics 2</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+ <button class="accordion">Level 400 Second Trismester</button>       
+     <div class="panel">  
+      <ul>
+<li>CHT 406 Environmental, Medicinal and Food Testing 2</li>
+<li>CHT 442 Advanced Analytical Techniques 2</li>
+<li>CHT 454 Food Product Development 2</li>
+<li>CHT 456 Applied Agricultural Chemistry and Agrochemicals 2</li>
+      </ul>
+    </div>
+    </div>
+
+      <h3>Research Component</h3>
+      <ul>
+        <li>CHT 490 – Research Project (6 Credits)</li>
+      </ul>
+
+      <h3>Practical Training</h3>
+      <ul>
+        <li>FPT 120 – Field Practical Programme I (6 Credits)</li>
+        <li>FPT 220 – Field Practical Programme II (6 Credits)</li>
+        <li>FPT 320 – Industrial Attachment (6 Credits)</li>
+      </ul>
+    </section>
+    <section id="job-opportunities">
+  <h2>Job Opportunities</h2>
+  <ol>
+    <li>
+      <p>
+        Graduates can work in <strong>chemical processing industries</strong> such as petroleum refining, cement manufacturing, paint production, and plastics. Typical roles include process engineers, quality control analysts, and production supervisors.
+      </p>
+    </li>
+    <li>
+      <p>
+        The <strong>pharmaceutical and biotechnology industries</strong> offer roles like research assistants, formulation chemists, drug analysts, and laboratory technologists involved in drug development and regulatory compliance.
+      </p>
+    </li>
+    <li>
+      <p>
+        Opportunities exist in <strong>environmental and waste management</strong> sectors as environmental chemists, pollution control officers, or sustainability consultants, focusing on areas like water treatment and environmental assessments.
+      </p>
+    </li>
+    <li>
+      <p>
+        In <strong>academic and research institutions</strong>, graduates can become teaching assistants, research scientists, or lab technologists—roles that also serve as stepping stones for postgraduate studies.
+      </p>
+    </li>
+    <li>
+      <p>
+        The <strong>food and beverage industry</strong> employs chemical technologists as food quality analysts, product development specialists, and safety auditors involved in food chemistry and preservation.
+      </p>
+    </li>
+    <li>
+      <p>
+        In the <strong>forensic science and criminal investigation sector</strong>, roles such as forensic analysts and toxicologists allow graduates to apply their expertise in crime labs to solve cases using chemical evidence.
+      </p>
+    </li>
+    <li>
+      <p>
+        Graduates can pursue careers in the <strong>oil and gas, mining, agrochemical, and cosmetic industries</strong>, contributing to product innovation, safety analysis, and industrial process control.
+      </p>
+    </li>
+    <li>
+      <p>
+        With entrepreneurial training, graduates can also establish their own businesses in <strong>chemical production, laboratory services, or environmental consultancy</strong>.
+      </p>
+    </li>
+  </ol>
+</section>
+    <!-- emerging areas in Chemical Science and Technology  -->
+     <section id="emerging-technologies">
+  <h2>Emerging Areas and Technologies in Chemical Science and Technology</h2>
+  <ol>
+    <li>
+      <p><strong>Green Chemistry:</strong> The design of chemical products and processes that reduce or eliminate the use and generation of hazardous substances. It supports sustainability by minimizing waste, improving efficiency, and using renewable resources.</p>
+    </li>
+    <li>
+      <p><strong>Nano-technology:</strong> The manipulation of materials at the molecular or atomic level for the development of new materials, sensors, drug delivery systems, and high-performance coatings with enhanced properties.</p>
+    </li>
+    <li>
+      <p><strong>Biotechnology and Bioengineering:</strong> Integrates chemistry with biology to produce innovative solutions in health, agriculture, and environmental protection, such as biofuels, genetically engineered enzymes, and biodegradable materials.</p>
+    </li>
+    <li>
+      <p><strong>Artificial Intelligence (AI) in Chemistry:</strong> AI is revolutionizing chemical research by predicting molecular behavior, automating synthesis, and discovering new materials through machine learning and big data analytics.</p>
+    </li>
+    <li>
+      <p><strong>3D Printing in Chemical Engineering:</strong> Used for creating lab-on-a-chip devices, custom reaction vessels, and personalized medicine formulations. It enables precise fabrication of complex chemical structures.</p>
+    </li>
+    <li>
+      <p><strong>Renewable Energy and Energy Storage:</strong> Chemical research is key to developing new battery technologies, hydrogen fuel cells, and efficient solar materials, essential for the transition to clean energy systems.</p>
+    </li>
+    <li>
+      <p><strong>Pharmaceutical Nanotechnology:</strong> Focuses on nano-scale drug carriers that enhance targeted delivery, improve bioavailability, and reduce side effects in advanced therapies.</p>
+    </li>
+    <li>
+      <p><strong>Smart Materials and Responsive Polymers:</strong> Materials that can change their properties in response to external stimuli like temperature, pH, or light. Used in sensors, biomedical devices, and environmental systems.</p>
+    </li>
+    <li>
+      <p><strong>Environmental Chemistry and Remediation:</strong> Emerging tech includes carbon capture, green solvents, and photocatalytic degradation to combat pollution and global warming.</p>
+    </li>
+    <li>
+      <p><strong>Computational Chemistry and Molecular Simulation:</strong> High-performance computing allows for the simulation of molecular structures and chemical reactions, accelerating drug design and material discovery.</p>
+    </li>
+  </ol>
+</section>
+    
+      <!-- Image representing research in chemistry -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Nanotechnology_lab.jpg" alt="Nanotechnology research" width="600">
+    </section>
+
+    <section id="course materials">
+  <div>
+      <h2>Course Materials Download</h2>
+       <div class="accordion-item">
+ <button class="accordion">Level 400</button>       
+     <div class="panel">  
+  <ul>
+      <li>
+        <strong>CHT 421 – Natural Products Chemistry</strong><br>
+        <a href="https://www.researchgate.net/profile/Br-Rajeswara-Rao/post/What-is-the-most-efficient-method-for-extraction-of-phytochemicals-from-plants/attachment/59d6460ec49f478072eae357/AS%3A273831233556481%401442297861959/download/Natural%2BProducts%2BChemistry-Cooper%2C%2BNicola.pdf" target="_blank">Download: Natural Products Chemistry – Cooper & Nicola (PDF)</a><br>
+        <a href="https://www.keydaru.ir/wp-content/uploads/2019/12/chemistry-of-plant-natural-product.pdf" target="_blank">Download: Chemistry of Plant Natural Products</a>
+      </li>
+
+      <li>
+        <strong>CHT 455 – Pharmaceutical Analysis and Quality Control</strong><br>
+        <a href="https://www.walshmedicalmedia.com/open-access/pharmaceutical-analysis-of-quality-control-of-drugs.pdf" target="_blank">Download: Pharmaceutical Analysis of Quality Control of Drugs</a><br>
+        <a href="https://www.jocpr.com/articles/techniques-for-quality-control-in-pharmaceutical-analysis.pdf" target="_blank">Download: Techniques for Quality Control</a>
+      </li>
+      <li>
+        <strong>CHT 402 - Principles of Quality Management</strong></br>
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.icao.int/NACC/Documents/Meetings/2016/AIMQMS/QMSFPLAIMP04.pdf&ved=2ahUKEwjbrqukwvONAxVRXGwGHZ2HAkcQFnoECFAQAQ&usg=AOvVaw2ZGoqX-GKsgcTVwixVT_59" target="_blank">Download principles of quality management</a><br>
+        <a href="https://imchekedu.files.wordpress.com/2013/09/total-quality-management.pdf" target="_blank">Download total quality management</a>
+      </li>
+<li>
+  <strong>CHT 424 Pharmacognosy and Phytochemistry</strong><br>
+  <a href="https://pharmabookbank.files.wordpress.com/2019/03/14.2.pharmacognosy-by-biren-shahavinash-seth-1.pdf" target="_blank">Download pharmacognosy-by-biren-shahavinash-seth-1</a><br>
+<a href="https://annamalaiuniversity.ac.in/studport/download/engg/pharm/resources/BPHARM_2Y_4S_405T_Pharmacognosy%20&%20Phytochemistry-I.pdf" target="_blank">Download phytochemistry and Pharmacognosy</a>
+</li>
+
+<li>
+  <strong>CHT 462 Forensic Toxicology</strong><br>
+<a href="https://www.scribd.com/document/858904026/Forensic-Toxicology-Mechanisms-and-Pathology-1st-Edition-Open-Access-Download" target="_blank">Download Forensic-Toxicology-Mechanisms-and-Pathology-1st-Edition-Open-Access-Download</a><br
+<a href="https://www.researchgate.net/publication/359023882_Forensic_Toxicology_Concepts_and_Applications_in_Pharmaceutical_Medicine" target="_blank">Download 359023882_Forensic_Toxicology_Concepts_and_Applications_in_Pharmaceutical_Medicine</a>
+</li> 
+
+<li>
+  <strong>CHT 452 Petroleum Chemistry and Technology</strong><br>
+<a href="https://chemindia.chemicals.gov.in/Reportpdf/FundamentalsofPetroleumandPetrochemicalEngineering.pdf" target="_blank">Download Fundamentals of Petroleumand Petrochemical Engineering</a><br>
+<a href="https://nou.edu.ng/coursewarecontent/CHM%20311.pdf" target="_blank">Download petroleum chemistry and technology</a>
+</li>
+<li>
+  <strong>CHT 404 Pollution Control and Environmental Analysis</strong><br>
+<a href="https://www.bbau.ac.in/dept/UIET/TCE-033%20%20epdf.pub_environmental-pollution-and-control.pdf" target="_blank">Download pub_environmental-pollution-and-control</a>
+<a href="https://thedocs.worldbank.org/en/doc/87e588d5efe96994ab56ce1fbba87fae-0200022021/original/211222-PMEH-2020-Pages.pdf" target="_blank">Download Pollution control</a>
+</li>
+ 
+<li>
+  <strong>CHT 453 Pulp and Paper Technology</strong><br>
+  <a href="https://www.rexresearch1.com/PapermakingLibrary/HandbookPulpPaperTechnologistsSmook.pdf" target="_blank">Download HandbookPulpPaperTechnologistsSmook</a><br>
+<a href="https://bteup.ac.in/Syllabus/folder2324/364-PULP%20AND%20PAPER%20TECHNOLOGY.pdf" target="_blank">Download pulp and paper technology</a>
+</li>
+
+<li>
+  <strong>CHT 451 Biotechnology</strong><br>
+  <a href="https://comsats.org/Publications/Other_Docs/Biotechnology_Book_2005.pdf" target="_blank">Download Biotechnology_Book_2005</a><br>
+<a href="http://ndl.ethernet.edu.et/bitstream/123456789/79515/11/Biotechnology.pdf" target="_blank">Download Biotechnology</a>
+</li>
+  </ul>
+     </div>
+       </div>
+  
+       <div class="accordion-item">
+ <button class="accordion">Level 300</button>       
+     <div class="panel">  
+  <ul>
+      <li>
+        <strong>CHT 311 – Quantum Chemistry</strong><br>
+        <a href="https://sossogroup.uk/wp-content/uploads/2018/05/CH932_QC.pdf" target="_blank">Download: Undergraduate Quantum Chemistry Notes (Sosso Group)</a><br>
+        <a href="https://lct.jussieu.fr/pagesperso/toulouse/enseignement/introduction_qc.pdf" target="_blank">Download: Introduction to Quantum Chemistry (Toulouse)</a>
+      </li>
+      <li>
+        <strong>CHT 307 Quality Management and Laboratory Accreditation</strong><br>
+<a href="https://knowledge.reagecon.com/wp-content/uploads/2021/09/Quality-Assurance-and-Accreditation-in-the-Analytical-Laboratory.pdf" target="_blank">Download Quality-Assurance-and-Accreditation-in-the-Analytical-Laboratory</a><br>
+<a href="https://chemistry.tcd.ie/assets/pdf/sf-chemistry/tg/REVISED%20Lectures%20in%20Introduction%20to%20Organic%20Chemistry%202011%20HANDOUT.pdf" target="_blank">Download quality managedment and lab accreditation</a>
+      </li>
+
+<li>
+  <strong>CHT 321 Organic Synthesis</strong><br>
+<a href="https://ocw.mit.edu/courses/5-37-introduction-to-organic-synthesis-laboratory-spring-2009/lecture-notes/" target="_blank">Download intoductory organic synthesis</a><br>
+<a href="https://chemistry.tcd.ie/assets/pdf/sf-chemistry/tg/REVISED%20Lectures%20in%20Introduction%20to%20Organic%20Chemistry%202011%20HANDOUT.pdf" target="_blank">Download organic synthesis</a>
+</li>
+
+<li>
+  <strong>CHT 341 Analytical Clinical Biochemistry</strong><br>
+<a href="https://download.e-bookshelf.de/download/0000/5952/75/L-G-0000595275-0002362770.pdf" target="_blank">Download Clinical Biochemistry</a>
+</li>
+
+<li>
+  <strong>CHT 331 Organometallic Chemistry and Catalysis</strong><br> 
+<a href="https://ggckondagaon.in/Content/155_105_Book_OrganometallicChemAndCata_Astruc2007_.pdf" target="_blank">Download 155_105_Book_OrganometallicChemAndCata_Astruc2007_</a><br>
+<a href="https://alpha.chem.umb.edu/chemistry/ch611/documents/Lec21OrganometalliccatalysisII_001.pdf" target="_blank">Download Lec21OrganometalliccatalysisII_001</a><br>
+<a href="https://batch.libretexts.org/print/Letter/Finished/chem-172716/Full.pdf" target="_blank">Downloadc Organometallic chemistry</a>
+</li>
+
+<li>
+  <strong>CHT 332 Photochemistry and Molecular Spectroscopy</strong><br>
+<a href="https://tech.chemistrydocs.com/Books/Spectroscopy/Fundamentals-of-molecular-spectroscopy-by-Walter-S-Struve.pdf" target="_blank">Download Fundamentals-of-molecular-spectroscopy-by-Walter-S-Struve</a>
+  <a href="https://www.researchgate.net/publication/325079968_UNIT-III_Photochemical_Reactions" target="_blank">Download 325079968_UNIT-III_Photochemical_Reactions</a>
+</li>
+
+<li>
+  <strong>ECN 302 Economics for Chemical Scientist</strong><br>
+<a href="//www.core-econ.org/" target="_blank">Download core-economics</a>
+</li>
+<li>
+  <strong>CHT 351 Chemical and Bioprocess Technology</strong><br>
+  <a href="https://dokumen.pub/chemical-process-technology-2nd-edition-2nbsped-9781118570753.html" target="_blank">Download chemical-process-technology-2nd-edition-2nbsped-9781118570753</a><br>
+<a href="https://mis.alagappauniversity.ac.in/siteAdmin/dde-admin/uploads/4/PG_M.Sc._Microbiology_364%2041_Bioprocess%20Technology-English_9699.pdf" target="_blank">Download _Microbiology_364%2041_Bioprocess%20Technology-English_9699</a>
+</li>
+
+<li>
+  <strong>CHT 304 Chemoinformatics</strong><br>
+  <a href="https://batch.libretexts.org/print/Letter/Finished/chem-143689/Full.pdf" target="_blank">Download Chemoinformatics</a>
+</li>
+
+<li>
+  <strong>CHT 322 Biomolecules and Metabolism</strong><br>
+  <a href="https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_105%3A__Biomolecules_and_Metabolism_(Murphy)" target="_blank">BIS_105%3A__Biomolecules_and_Metabolism_</a>
+</li>
+
+<li>
+  <strong>CHT 302 Molecular Modelling and Drug Design</strong><br>
+  <a href="https://www.scribd.com/document/329005239/MOLECULAR-MODELLING-AND-DRUG-DESIGN" target="_blank">Download MOLECULAR-MODELLING-AND-DRUG-DESIGN</a>
+</li>
+    </ul>
+  </div>
+       </div>
+       <div class="accordion-item">
+ <button class="accordion">Level 200</button>       
+     <div class="panel">
+      <ul>
+        <li>
+          <strong>CHT 256 Material Science and Nanotechnology</strong><br>
+          <a href="https://ocw.mit.edu/courses/materials-science-and-engineering/3-055j-introduction-to-materials-behavior-fall-2006/lecture-notes/" target="_blank">Download introduction-to-materials-behavior</a><br>
+<a href="https://openstax.org/books/introduction-materials-science/pages/1-introduction" target="_blank">Download introduction-materials-science</a>
+        </li> 
+<li>
+  <strong>CHT 254 Biochemical Techniques</strong><br>
+  <a href="https://mgcub.ac.in/pdf/material/2020031114130174dcd5e187.pdf" target="_blank">Download Biochemical techniques</a>
+</li>
+
+<li>
+  <strong>CHT 242 Industrial Chemistry I</strong><br>
+  <a href="https://nsdl.niscair.res.in/bitstream/123456789/1050/1/Industrial%20Chemistry.pdf" target="_blank">Download Industrial%20Chemistry</a>
+</li>
+
+<li>
+  <strong>CHT 232 Coordination and Bioinorganic Chemistry</strong><br>
+  <a href="https://doc.lagout.org/science/0_Computer%20Science/1_Chemistry/Shriver%20%26%20Atkins%20-%20Inorganic%20Chemistry.pdf" target="_blank">Download Coordination chemistry</a>
+</li>
+
+<li>
+  <strong>CHT 212 Phase Equilibria and Chemical kinetics</strong><br>
+  <a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Kinetics" target="_blank">Download Supplemental_Modules_(Physical_and_Theoretical_Chemistry)</a><br>
+<a href="https://ocw.mit.edu/courses/materials-science-and-engineering/3-021j-introduction-to-modeling-and-simulation-spring-2011/lecture-notes/MIT3_021JS11_lec12.pdf" target="_blank">Download Phase equillibria</a>
+</li>
+
+<li>
+  <strong>BUS 254 Business Skills for Chemical Scientist</strong><br>
+  <a href="https://openstax.org/books/introduction-business/pages/1-introduction" target="_blank">Download introduction-business</a>
+</li>
+ 
+<li>
+  <strong>CHT 257 Chemical Principles in CSI</strong><br>
+  <a href="https://chem.libretexts.org/Bookshelves/Forensic_Chemistry" target="_blank">Download Forensic_Chemistry</a><br>
+<a href="https://www.lawctopus.com/academike/wp-content/uploads/2015/07/FORENSIC-SCIENCE-1.pdf" target="_blank">download FORENSIC-SCIENCE-1</a>
+</li>
+
+<li>
+  <strong>CHT 253 Industrial Chemicals and Environment</strong><br>
+  <a href="https://www.hzu.edu.in/uploads/2021/02/CH-802-Industrial-Chemistry.pdf" target="_blank">Download industrial chemicals</a>
+</li>
+
+<li>
+  <strong>CHT 241 Analytical Methods in Chemistry</strong><br>
+  <a href="https://dspace.iimk.ac.in/bitstream/handle/2259/1198/analyticalchemistry2.1.pdf" target="_blank">Download analyticalchemistry2</a><br>
+<a href="https://chem.libretexts.org/Bookshelves/Analytical_Chemistry" target="_blank">Download Analytical_Chemistry</a>
+</li>
+
+<li>
+  <strong>CHT 251 Chemical Process Utilities</strong><br>
+  <a href="https://vtu.ac.in/pdf/cbcs/notes/che35.pdf" target="_blank">Download chemical process utilities</a>
+</li>
+ 
+<li>
+  <strong>CHT 221 Reaction Mechanisms and Heterocyclic Chemistry</strong><br>
+  <a href="https://www.researchgate.net/publication/385275736_ADVANCED_ORGANIC_CHEMISTRY_-I_MPC_102T_UNIT-IV_Heterocyclic_Chemistry_Organic_Name_Reactions" target="_blank">Download organic reaction mechanisms</a><br>
+<a href="https://www.slideshare.net/slideshow/reactions-of-heterocyclic-chemistry/123713950" target="_blank">Download reactions-of-heterocyclic-chemistry</a>
+</li>
+
+<li>
+  <strong>CHT 211 Chemical Thermodynamics and Applications</strong><br>
+  <a href="https://terpconnect.umd.edu/~nsw/ench485/labs/DeVoe_Thermo_and_Chem.pdf" target="_blank">Download chemical Thermodynamics</a>
+</li>
+      </ul>
+     </div>
+       </div>
+
+
+</div>
+       <div class="accordion-item">
+ <button class="accordion">Level 100</button>       
+     <div class="panel">
+      <ul>
+        <li>
+          <strong>PHY 103 Principles of Physics I (Theory)</strong><br>
+          <a href="https://jnvdeoria.files.wordpress.com/2020/04/2013_book_principlesofphysics.pdf" target="_blank">Download 2013_book_principlesofphysics</a>
+        </li>
+
+<li>
+  <strong>CHT 101 – General Physical and Inorganic Chemistry</strong><br>
+  <a href="https://inorgchem.nuph.edu.ua/wp-content/uploads/2020/11/general_inorganic_2009.pdf" target="_blank">Download general_inorganic_2009</a>
+</li>
+
+<li>
+  <strong>BIO 131 – General Biology</strong><br>
+  <a href="https://upload.wikimedia.org/wikipedia/commons/4/40/GeneralBiology.pdf" target="_blank">Download GeneralBiology</a>
+</li>
+ 
+<li>
+  <strong>CHT 124 Biochemistry and Cell Biology</strong><br>
+  <a href="https://webstor.srmist.edu.in/web_assets/srm_mainsite/files/downloads/Introduction_To_Biochemistry.pdf" target="_blank">Download Introduction_To_Biochemistry</a>
+</li>
+ 
+<li>
+  <strong>CHT 162 Mathematics for Chemical Sciences II</strong><br>
+  <a href="https://sisoyyomismo.files.wordpress.com/2013/01/mathematics-for-physical-chemistry-3rd-ed.pdf" target="_blank">Download mathematics-for-physical-chemistry-3rd-ed</a>
+</li>
+
+<li>
+  <strong>PHY 102 Principles of Physics II (Theory)</strong><br>
+  <a href="https://www2.tntech.edu/leap/murdock/books/v1chap1.pdf." target="_blank">Download physics I</a>
+</li>
+
+<li>
+  <strong>CHT 142 Analytical Chemistry</strong><br>
+  <a href="https://tech.chemistrydocs.com/Books/Analytical/Analytical-Chemistry-By-D-Kealey-and-P-J-Haines.pdf" target="_blank">Download Analytical-Chemistry-By-D-Kealey-and-P-J-Haines</a>
+</li>
+
+<li>
+  <strong>CHT 122 Introductory Organic Chemistry</strong><br>
+  <a href="https://courses.lumenlearning.com/suny-potsdam-organicchemistry/" target="_blank">Download suny-potsdam-organicchemistry</a>"
+</li>
+ 
+<li>
+  <strong>CHT 161 Mathematics for Chemical Sciences I</strong><br>
+  <a href="https://www.birmingham.ac.uk/Documents/college-eps/college/stem/Student-Summer-Education-Internships/Maths-for-Chemists-Booklet.pdf" target="_blank">Download mathematics I</a>
+</li>
+      </ul>
+     </div>
+     </div>
+</section>
+
+
+    <!-- List of academic staff in the department -->
+    <section id="lecturers">
+      <h2>Lecturers</h2>
+      <ul>
+        <li>Dr. Salis Ibrahim</li>
+        <li>Mr. Latif Adebayor</li>
+        <li>Mr. Hamidu Ibrahim</li>
+        <li>Dr. Imoro Haruna</li>
+      </ul>
+    </section>
+
+    <!-- Contact section for inquiries -->
+    <section id="contact">
+<!-- 📞 Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>For further Enquires</h2>
+  <p class="section-intro">Let’s work together! Fill out the form or reach out directly.</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+
+    <!-- Direct Contact Info -->
+    <div class="contact-info">
+      <h3>Direct Contact</h3>
+      <p><strong>Email:</strong> jeremiahazika@gmail.com</p>
+      <p><strong>WhatsApp:</strong> +233 534 371 591</p>
+      <p><strong>Location:</strong> Ghana (Nothern Region, Nyankpala)</p>
+
+      <div class="social-icons">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="https://behance.net/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Optional location image or map -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/University_Campus_Map.jpg" alt="Campus map" width="500">
+
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; 2025 Department of Chemical Sciences. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
